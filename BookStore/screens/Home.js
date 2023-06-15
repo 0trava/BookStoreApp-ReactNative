@@ -267,9 +267,8 @@ const Home = () => {
     function renderMyBookSection (myBooks) {
 
         const renderItem = ({item, index}) => {
-
             return (
-                <TouchableOpacity 
+            <TouchableOpacity 
             style={{
                 flex:1, 
                 marginLeft: 
@@ -287,8 +286,25 @@ const Home = () => {
                             borderRadius: 20
                         }}/>
                 {/* Book Info */}
-
-
+                <View style={{marginTop: SIZES.radius, flexDirection: 'row', alignItems: 'center'}}>
+                    <Image
+                        source={icons.clock_icon}
+                        style={{
+                            width: 20,
+                            height: 20,
+                            tintColor: COLORS.lightGray
+                        }}/>
+                    <Text style={{marginLeft: 5, ...FONTS.body3, color: COLORS.lightGray}}>{item.lastRead}</Text>
+                    <Image 
+                        source={icons.page_icon}
+                        style={{
+                            marginLeft: SIZES.radius,
+                            width: 20,
+                            height: 20,
+                            tintColor: COLORS.lightGray
+                        }}/>
+                    <Text style={{marginLeft: 5, ...FONTS.body3, color: COLORS.lightGray}}>{item.completion}</Text>
+                </View>
             </TouchableOpacity>
             )
             
