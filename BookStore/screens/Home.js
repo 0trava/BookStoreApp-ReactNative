@@ -9,6 +9,7 @@ import {
     View } from 'react-native';
 
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import { FlatList } from 'react-native-gesture-handler';
 
 const LinearDivider = () => {
     return(
@@ -264,6 +265,37 @@ const Home = () => {
     }
 
     function renderMyBookSection (myBooks) {
+
+        const renderItem = ({item, index}) => {
+
+            return (
+                <TouchableOpacity 
+            style={{
+                flex:1, 
+                marginLeft: 
+                index === 0 ? SIZES.padding : 0, 
+                marginRight: SIZES.radius }}
+            onPress={()=> console.log("My books")}>
+
+                {/* Book Cover */}
+                    <Image 
+                        source={item.bookCover}
+                        resizeMode='cover'
+                        style={{
+                            width: 180,
+                            height: 250,
+                            borderRadius: 20
+                        }}/>
+                {/* Book Info */}
+
+
+            </TouchableOpacity>
+            )
+            
+        }
+
+
+
         return(
             <View style={{flex: 1}}>
                 {/* Header */}
@@ -277,6 +309,14 @@ const Home = () => {
                 </View>
 
                 {/* Books */}
+                <View style={{flex:1, marginTop: SIZES.padding}}>
+                    <FlatList
+                        data={myBooks}
+                        renderItem={renderItem}
+                        keyExtractor={item => `${item.id}`}
+                        horizontal
+                        showsHorizontalScrollIndicator={false}/>
+                </View>
             </View>
         )
     }
