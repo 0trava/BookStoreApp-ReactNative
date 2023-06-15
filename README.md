@@ -10,3 +10,9 @@ Link to the lesson: https://www.youtube.com/watch?v=PEI38Pa8ZYM&list=PLS1akX7gZo
 <p>$ cd BookStore</p>
 
 <p>$ npm instal react-native link</p>
+
+
+
+
+
+my practical work
