@@ -84,18 +84,18 @@ const Tabs = () => {
                 name="Home"
                 component={Home}
             />
-            <Tab.Screen
+            {/* <Tab.Screen
                 name="Search"
-                component={Home}
+                component={}
             />
             <Tab.Screen
                 name="Notification"
-                component={Home}
+                component={}
             />
             <Tab.Screen
                 name="Setting"
-                component={Home}
-            />
+                component={}
+            /> */}
         </Tab.Navigator>
     )
 }
