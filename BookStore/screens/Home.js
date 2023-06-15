@@ -93,6 +93,9 @@ const Home = () => {
                         {/* Claim */}
 
 
+                        {/* Divider */}
+
+
                     </View>
 
             </View>
