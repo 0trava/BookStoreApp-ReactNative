@@ -337,6 +337,10 @@ const Home = () => {
         )
     }
 
+    function renderCategoryHeader() {
+
+    }
+
   return (
         <SafeAreaView style={{flex:1, backgroundColor:COLORS.black }}>
             {/* Header Section */}
@@ -353,10 +357,11 @@ const Home = () => {
                 </View>
 
                 {/* Categories Section */}
-                <View>
-                    {/* {renderMyBookSection(myBooks)} */}
+                <View style={{marginTop: SIZES.padding}}>
+                    <View>
+                    {renderCategoryHeader()}
+                    </View>
                 </View>
-
             </ScrollView>
 
         </SafeAreaView>
