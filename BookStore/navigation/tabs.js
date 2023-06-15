@@ -39,6 +39,42 @@ const Tabs = () => {
                                 }}
                             />
                         )
+                    case "Search":
+                        return(
+                            <Image 
+                                 source={icons.search_icon}
+                                resizeMode="contain"
+                                 style={{
+                                      tintColor: tintColor,
+                                      width: 25,
+                                      height: 25,
+                                 }}
+                             />
+                         )
+                    case "Notification":
+                        return(
+                            <Image 
+                                source={icons.notification_icon}
+                                resizeMode="contain"
+                                style={{
+                                    tintColor: tintColor,
+                                    width: 25,
+                                    height: 25,
+                                     }}
+                            />
+                        )
+                    case "Notification":
+                        return(
+                            <Image 
+                                source={icons.notification_icon}
+                                resizeMode="contain"
+                                style={{
+                                    tintColor: tintColor,
+                                    width: 25,
+                                    height: 25,
+                                        }}
+                            />
+                        )
                 }
             }
         })}
