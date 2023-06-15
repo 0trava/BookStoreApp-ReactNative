@@ -1,5 +1,6 @@
 import React from 'react';
 import { 
+    Image,
     SafeAreaView,
     StyleSheet, 
     Text, 
@@ -54,8 +55,21 @@ const Home = () => {
                             borderRadius: 25,
                             backgroundColor: 'rgba(0,0,0,0.5)'
                         }}>
-
+                            <Image 
+                            source={icons.plus_icon}
+                            resizeMode='contain'
+                            style={{
+                                width: 20,
+                                height: 20
+                            }}
+                            />
                         </View>
+
+                        <Text style={{
+                            marginLeft: SIZES.base,
+                            color: COLORS.white,
+                            ...FONTS.body3,
+                            }}> {profile.point} point</Text>
 
                     </View>
                 </TouchableOpacity>
@@ -64,11 +78,33 @@ const Home = () => {
 
     }
 
+    function renderButtonSection() {
+        return (
+            <View style={{
+                flex: 1, 
+                justifyContent: 'center',
+                padding: SIZES.padding, }}>
+                    <View style={{
+                        flexDirection: 'row',
+                        height: 70,
+                        backgroundColor: COLORS.secondary,
+                        borderRadius: SIZES.radius
+                    }}>
+                        {/* Claim */}
+
+
+                    </View>
+
+            </View>
+        )
+    }
+
 
   return (
         <SafeAreaView style={{flex:1, backgroundColor:COLORS.black }}>
             <View style={{ height: 200 }}>
                 {renderHeader(profile)}
+                {renderButtonSection()}
 
             </View>
 
