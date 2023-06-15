@@ -7,10 +7,9 @@ Link to the lesson: https://www.youtube.com/watch?v=PEI38Pa8ZYM&list=PLS1akX7gZo
 ![Alt text](image.png)
 
 
+<h3>Terminal comands</h3>
 <p>$ npx create-expo-app BookStore</p>
-
 <p>$ cd BookStore</p>
-
 <p>$ npm instal react-native link</p>
 
 
@@ -19,4 +18,4 @@ Link to the lesson: https://www.youtube.com/watch?v=PEI38Pa8ZYM&list=PLS1akX7gZo
 
 
 
-my practical work
+* my practical work
