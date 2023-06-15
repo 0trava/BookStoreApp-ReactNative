@@ -30,8 +30,34 @@ const Home = () => {
                     </View>
 
                 {/* Points */}
-                <TouchableOpacity>
-                    
+                <TouchableOpacity
+                    style={{
+                        backgroundColor: COLORS.primary,
+                        height: 40,
+                        paddingLeft: 3,
+                        paddingRight: SIZES.radius,
+                        borderRadius: 20,
+                    }}
+                    onPress={()=> {console.log("Point")}}
+                >
+                    <View style={{
+                        flex: 1,
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}>
+                        <View style={{
+                            width: 30,
+                            height: 30,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderRadius: 25,
+                            backgroundColor: 'rgba(0,0,0,0.5)'
+                        }}>
+
+                        </View>
+
+                    </View>
                 </TouchableOpacity>
             </View>
         )
