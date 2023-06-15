@@ -338,6 +338,13 @@ const Home = () => {
     }
 
     function renderCategoryHeader() {
+        return (
+            <View style={{flex:1, paddingLeft: SIZES.padding}}>
+                <FlatList 
+                    />
+
+            </View>
+        )
 
     }
 
