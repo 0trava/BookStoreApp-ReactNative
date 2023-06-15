@@ -6,5 +6,7 @@ Link to the lesson: https://www.youtube.com/watch?v=PEI38Pa8ZYM&list=PLS1akX7gZo
 
 
 <p>$ npx create-expo-app BookStore</p>
+
 <p>$ cd BookStore</p>
+
 <p>$ npm instal react-native link</p>
