@@ -8,9 +8,10 @@ In practice, was created a beautiful bookstore website with a beautiful design f
 ![Alt text](image.png)
 
 <h3>🌠 Initial commands:</h3>
-<p>$ npx create-expo-app BookStore</p>
-<p>$ cd BookStore</p>
-<p>$ npm instal react-native link</p>
 
+~~~
+$ npx create-expo-app BookStore
+$ cd BookStore
+$ npm instal react-native link
+~~~
 
-// my practical work
