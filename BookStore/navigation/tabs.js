@@ -83,6 +83,7 @@ const Tabs = () => {
             <Tab.Screen
                 name="Home"
                 component={Home}
+                op
             />
             {/* <Tab.Screen
                 name="Search"
