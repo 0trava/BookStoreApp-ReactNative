@@ -20,7 +20,7 @@ const LinearDivider = () => {
     )
 }
 
-const Home = () => {
+const Home = ({navigation}) => {
 
     const profileData ={
         name: 'Username',
@@ -274,7 +274,7 @@ const Home = () => {
                 marginLeft: 
                 index === 0 ? SIZES.padding : 0, 
                 marginRight: SIZES.radius }}
-            onPress={()=> console.log("My books")}>
+            onPress={() => navigation.navigate("BookDetail", {book: item})}>
 
                 {/* Book Cover */}
                     <Image 

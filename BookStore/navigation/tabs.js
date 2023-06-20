@@ -83,20 +83,19 @@ const Tabs = () => {
             <Tab.Screen
                 name="Home"
                 component={Home}
-                op
             />
-            {/* <Tab.Screen
+            <Tab.Screen
                 name="Search"
-                component={}
+                component={Home}
             />
             <Tab.Screen
                 name="Notification"
-                component={}
+                component={Home}
             />
             <Tab.Screen
                 name="Setting"
-                component={}
-            /> */}
+                component={Home}
+            />
         </Tab.Navigator>
     )
 }

@@ -9,12 +9,12 @@ export {
     BookDetail
 }
 
-export default function index() {
-  return (
-    <View>
-      <Text>index</Text>
-    </View>
-  )
-}
+// export default function index() {
+//   return (
+//     <View>
+//       <Text>index</Text>
+//     </View>
+//   )
+// }
 
-const styles = StyleSheet.create({})
+// const styles = StyleSheet.create({})
