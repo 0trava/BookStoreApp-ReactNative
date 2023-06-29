@@ -1,4 +1,4 @@
-# BookStoreApp-ReactNative
+# BookStoreApp on ReactNative
 
 <p>Website for a video lesson for practicing practical skills in working in ReactNative. 
 In practice, was created a beautiful bookstore website with a beautiful design from Piko on Dribbble</p>
